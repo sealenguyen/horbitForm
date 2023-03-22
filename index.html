@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            padding: 1em .5em;
+        }
+
+        form {
+            width: 500px;
+            padding: .5em 1em 2em;
+        }
+
+        form h2 {
+            text-align: center;
+            font-weight: 600;
+            padding: .5em;
+            margin: 0;
+        }
+
+        form p {
+            color: blue;
+            text-align: right;
+            margin: 0.35em;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li:nth-child(2) {
+            color: orangered;
+        }
+
+        ul li:first-child {
+            width: 30%;
+        }
+
+        .loginFrm {
+            text-align: left;
+            background-color: yellow;
+        }
+
+        .loginFrm h2 {
+            color: blue;
+            background-color: aquamarine;
+        }
+
+        .loginFrm tr td:first-child {
+            color: blue;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="background-color: aqua;">
+        <tr>
+            <td>
+                <form action="index.html" method="get" style="background-color: aliceblue;">
+                    <h2 style="background: orangered;color: azure;">SỞ THÍCH CỦA BẠN</h2>
+                    <ul>
+                        <li>
+                            <p>Họ và Tên</p>
+                        </li>
+                        <li><input type="text" name="fullName" width="25"></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>Email</p>
+                        </li>
+                        <li><input type="text" name="Email" width="18"></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>Sở thích</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="hobby" value="">Thể thao
+                            <input type="checkbox" name="hobby" value="">Âm Nhạc
+                            <input type="checkbox" name="hobby" value="">Đọc sách<br>
+                            <input type="checkbox" name="hobby" value="">Lướt Web
+                            <input type="checkbox" name="hobby" value="">Chơi Game
+                            <input type="checkbox" name="hobby" value="">Điện ảnh<br>
+                            <input type="checkbox" name="hobby" value="">Du lịch
+                        </li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li>
+                            <button type="button" name="btnSend" value="Send">Gửi thông tin</button>
+                            <!-- <input type="button" value="Gửi thông tin" name="send"> -->
+                            <button type="reset" name="btnReset" value="reset">Nhập lại</button>
+                            <!-- <input type="button" value="Nhập lại" name="reset"> -->
+                        </li>
+                    </ul>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <!-- Form Đăng kí học viên  -->
+    <form action="" method="get" class="loginFrm">
+        <h2 id="">ĐĂNG KÍ HỌC VIÊN</h2>
+        <table>
+            <tr>
+                <td>
+                    Họ và Tên :
+                </td>
+                <td><input id="fullName" type="text" name="FullName" value=""></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh :</td>
+                <td><input type="date" id="dateBirth" name="datebirth"></td>
+            </tr>
+            <tr>
+                <td>Giới tính :</td>
+                <td><input type="radio" value="0" name="male">Nam
+                    <input type="radio" value="1" name="female">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ :</td>
+                <td>
+                    <textarea name="address" id="" cols="20" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Lớp :
+                </td>
+                <td>
+                    <select name="choiceClass" id="choiceCls">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Điện thoại :</td>
+                <td>
+                    <input type="number" name="phoneNumber">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="button" name="login" id="btnLogin">Đăng ký</button>
+                    <button type="reset" name="btnreset">Nhập lại</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
